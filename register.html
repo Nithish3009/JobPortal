@@ -6,51 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./CSS/register.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="valid.js"></script>
-    <style>
-      body{
-        background-image: url('bg.jpg');
-        background-size:cover;
-      }
-      form{
-        background-color:#fff;
-        margin-top: 6em;
-        margin-left :30em;
-        margin-right : 10px;
-        margin-bottom:5em;
-        padding: 10px;
-        box-shadow: 10px 10px 8px 10px #888888;
-      }
-    input{
-        margin-bottom: 20px;
-    }
-    a{
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      border: 1px solid #2596be;
-      border-radius: 4px;
-      float: right;
-      width:60px;
-      height: 35px;
-      margin: 10px;
-    }
-    a:hover{
-      text-decoration: none;
-      color: white;
-    }
-    </style>
     <title>Register</title>
     
 </head>
 <body>
-  <h1 style="margin-left: 700px;color: white;text-shadow:2px 2px black;">Job Seeking Portals</h1>
+  <h1 style="margin-left: 700px;color: white;text-shadow:2px 2px black;">Job Seeking Portal</h1>
    
 <div class="container">
-<form method="POST" action="http://localhost/cgi-bin/connectivity.pl" id="frm" onsubmit="return validateForm()" name="contactForm">
+<form id="frm" name="contactForm">
 
-    <input type='hidden' name='action' id='action'>
+    <!-- <input type='hidden' name='action' id='action'> -->
     <div class="form-group form_top">
         <input type="text" name="name" id="name" placeholder="Your Name" class='form-control' >
         <div id="errorname" style="color: red;margin-left: 200px;"></div>
@@ -66,9 +34,13 @@
         <input type="password" name="pass" id="pass" placeholder="Password" class='form-control' >
         <div id="errorpass" style="color: red;margin-left: 200px;"></div>
     </div>
+
+    <div class="login">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
     
-    <div class="btn"><input  type="submit" id="submit" name="submit" class="btn btn-info text-light" value="Submit"></input></div>
-    <a style="border: 1px solid yellow;background-color:yellow;" href="update.html" target="_blank">Update</a>  <a style="border: 1px solid red;background-color:red;" href="update.html" target="_blank">Delete</a>
+    <div class="btn"><input  type="submit" id="submit" name="submit" class="btn btn-info text-light" value="Submit" /></div>
+    <!-- <a style="border: 1px solid yellow;background-color:#008CBA;">Update</a>  <a style="border: 1px solid #f44336;background-color:red;">Delete</a> -->
     
 </form>
 </div>

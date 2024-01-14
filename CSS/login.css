@@ -1,0 +1,16 @@
+body{
+    background-image: url('../Images/bg.jpg');
+    background-size:cover;
+  }
+  form{
+    background-color:#fff;
+    margin-top: 6em;
+    margin-left :30em;
+    margin-right : 10px;
+    margin-bottom:5em;
+    padding: 10px;
+    box-shadow: 10px 10px 8px 10px #888888;
+  }
+.form-control{
+    margin-bottom: 20px;
+}
